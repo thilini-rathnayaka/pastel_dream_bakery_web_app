@@ -130,7 +130,4 @@ Your database is now connected!
 ## 💡 Conclusion
 Pastel Dreams Bakery is a creative and functional web application that demonstrates modern web development concepts including responsiveness, interactivity, and user experience design.
 
----
 
-### 🔹 Step 2: Move Project Folder
-Copy the project folder to:
