@@ -1,0 +1,1494 @@
+/* Global Styles*/
+
+body{
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(135deg,#ffe6f2,#fff0f6,#f5e6ff,#ffe9f9);
+    background-size:400% 400%;
+    animation: dreamyGradient 15s ease infinite;
+    overflow-x:hidden;
+}
+
+/* Animated dreamy background */
+@keyframes dreamyGradient{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+/* Header */
+
+.dark-header{
+    background:linear-gradient(90deg,#000,#2b2b2b);
+    box-shadow:0 4px 20px rgba(255,192,203,0.3);
+}
+
+.dark-brand{
+    font-family:'Great Vibes',cursive;
+    font-size:48px;
+    color:#fff;
+    letter-spacing:2px;
+    text-shadow:0 0 15px rgba(255,182,193,0.8);
+}
+
+/* Divider under header */
+.dark-divider{
+    height:2px;
+    border:none;
+    background:linear-gradient(90deg,#ffb6c1,#ffd6e7,#f8c8dc);
+}
+
+
+/* NavBar */
+
+/* Glassy grayish black navbar */
+.glass-nav{
+    background:rgba(20,20,20,0.75);
+    backdrop-filter:blur(12px);
+    box-shadow:0 5px 20px rgba(0,0,0,0.35);
+}
+
+/* Brand (Pastel Dreams) */
+.brand{
+    font-family:"Great Vibes";
+    font-size:36px;
+    color:white;
+    transition:0.3s ease;
+}
+
+/* Brand hover = dark pink */
+.brand:hover{
+    color:#ff4da6;
+}
+
+/* Navigation links */
+.dark-nav .nav-link,
+.navbar .nav-link{
+    color:white;
+    font-weight:500;
+    letter-spacing:1px;
+    transition:all .35s ease;
+}
+
+/* Hover dreamy pink */
+.dark-nav .nav-link:hover,
+.navbar .nav-link:hover{
+    color:#ffc2e2;
+    text-shadow:0 0 8px #ffc2e2;
+}
+
+/* Active page underline */
+.dark-nav .nav-link.active,
+.navbar .nav-link.active{
+    border-bottom:3px solid #ffc2e2;
+}
+
+/* Allow pointer sparkle animation over navbar */
+.navbar{
+    pointer-events:auto;
+}
+
+
+
+/*Hero secion / Carousel*/
+
+.hero-section{
+    position:relative;
+    height:90vh;
+    overflow:hidden;
+}
+
+.carousel-item img{
+    height:90vh;
+    object-fit:cover;
+    filter:brightness(.75) saturate(1.1);
+}
+
+/* Caption center */
+.carousel-caption{
+    top:50%;
+    transform:translateY(-50%);
+}
+
+/* Hero title */
+.hero-title{
+    font-family:'Great Vibes',cursive;
+    font-size:65px;
+    color:white;
+    text-shadow:
+    0 0 10px #fff,
+    0 0 20px #ffd6e7,
+    0 0 40px #ffc0cb;
+}
+
+
+
+/* Buttons */
+
+.btn-magical{
+    background:linear-gradient(45deg,#ff8ac7,#ffa8e0);
+    color:white;
+    border:none;
+    padding:12px 28px;
+
+    /* User */
+    border-radius:10px;
+
+    transition:all 0.3s ease;
+    font-weight:500;
+}
+
+.btn-magical:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(255,138,199,0.4);
+    border-color: #ff4da6;
+}
+
+.btn-magical.clicked{
+    transform:scale(0.95);
+}
+
+
+
+/*floting lights*/
+
+.magic-light{
+    position:absolute;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.6;
+    animation:floatLight 10s infinite alternate;
+}
+
+.light1{
+    background:#ffc0cb;
+    top:10%;
+    left:5%;
+}
+
+.light2{
+    background:#f8c8dc;
+    bottom:10%;
+    right:5%;
+}
+
+@keyframes floatLight{
+    from{transform:translateY(0)}
+    to{transform:translateY(-40px)}
+}
+
+
+
+/*Section tiltles */
+
+.section-title{
+    font-family:'Great Vibes',cursive;
+    font-size:50px;
+    color:rgb(69,67,67);
+    text-shadow:0 0 10px rgba(255,182,193,0.6);
+}
+
+
+
+/* reation Images*/
+
+.creation-img{
+    width:100%;
+    border-radius:25px;
+    transition:.5s;
+    box-shadow:0 15px 40px rgba(255,192,203,0.4);
+}
+
+.creation-img:hover{
+    transform:scale(1.08) rotate(1deg);
+}
+
+
+
+/*Section Glow*/
+
+.section-title{
+    font-family:'Great Vibes', cursive;
+    font-size:52px;
+    color:#c85fa5;
+    margin-bottom:25px;
+    letter-spacing:2px;
+
+    text-shadow
+    :
+    0 0 10px #ffc6e9,
+    0 0 20px #ffd9f4,
+    0 0 35px rgba(255,200,240,0.9);
+
+    animation:titleGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow{
+    from{
+        text-shadow:
+        0 0 10px #ffc6e9,
+        0 0 20px #ffd9f4;
+    }
+
+    to{
+        text-shadow:
+        0 0 25px #ffb8e6,
+        0 0 50px #ffd6ff,
+        0 0 70px #ffe6fa;
+    }
+}
+
+
+/*About  Section*/
+
+.about-text{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#5a4a52;
+
+    text-shadow:0 0 5px rgba(255,230,250,0.6);
+}
+
+
+
+/*Cake Cards – Magical Flot */
+
+.cake-card{
+    background:linear-gradient(
+    145deg,
+    rgba(255,255,255,0.9),
+    rgba(255,240,250,0.9)
+    );
+
+    border-radius:18px;
+    padding:18px;
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08),
+    0 0 20px rgba(255,200,240,0.4);
+
+    transition:all .45s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+/* sparkle glow overlay */
+
+.cake-card::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.35),
+        transparent
+    );
+    transform:rotate(25deg);
+    opacity:0;
+    transition:0.6s;
+}
+
+.cake-card:hover::before{
+    opacity:1;
+    animation:shine 2s linear;
+}
+
+@keyframes shine{
+    from{ transform:translateX(-60%) rotate(25deg); }
+    to{ transform:translateX(60%) rotate(25deg); }
+}
+
+.cake-card img{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:12px;
+    transition:transform .5s ease;
+}
+
+.cake-card:hover img{
+    transform:scale(1.08);
+}
+
+.cake-card:hover{
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.15),
+    0 0 35px rgba(255,190,230,0.7);
+}
+
+
+
+/*Why Choose us Card*/
+
+.why-card{
+    font-size:30px;
+
+    background:rgba(255,255,255,0.55);
+    backdrop-filter:blur(18px);
+
+    border-radius:18px;
+    padding:35px;
+
+    box-shadow:
+    0 12px 30px rgba(255,182,193,0.3),
+    0 0 25px rgba(255,200,240,0.5);
+
+    transition:.4s ease;
+}
+
+.why-card p{
+    font-size:17px;
+    margin-top:10px;
+}
+
+.why-card:hover{
+    transform:translateY(-12px) scale(1.07);
+
+    box-shadow:
+    0 20px 45px rgba(255,182,193,0.45),
+    0 0 35px rgba(255,200,240,0.8);
+}
+
+
+
+/*Customer review Dreamy glass */
+
+.review-card{
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(15px);
+
+    border-radius:28px;
+
+    padding:45px;
+    width:60%;
+    margin:auto;
+
+    font-size:18px;
+    line-height:1.8;
+
+    box-shadow:
+    0 15px 50px rgba(255,192,203,0.4),
+    0 0 40px rgba(255,210,240,0.5);
+
+    position:relative;
+}
+
+.review-card::after{
+    content:"✨";
+    position:absolute;
+    top:-15px;
+    right:-10px;
+    font-size:30px;
+    animation:twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle{
+    0%{transform:scale(1); opacity:.7;}
+    50%{transform:scale(1.4); opacity:1;}
+    100%{transform:scale(1); opacity:.7;}
+}
+
+.stars{
+    font-size:20px;
+    margin-top:10px;
+}
+
+
+
+/* newsletter*/
+
+.newsletter{
+    background:linear-gradient(
+        135deg,
+        #ffe3f1,
+        #ffd6f0,
+        #ffe8fa
+    );
+
+    text-align:center;
+    padding:70px 20px;
+
+    box-shadow:
+    inset 0 0 60px rgba(255,210,240,0.6);
+}
+
+.newsletter h2{
+    font-family:'Great Vibes';
+    font-size:48px;
+    color:#c85fa5;
+}
+
+.newsletter p{
+    margin-top:10px;
+}
+
+.newsletter-form{
+    margin-top:25px;
+}
+
+.newsletter input{
+    padding:12px 18px;
+    border-radius:30px;
+    border:none;
+    width:260px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    outline:none;
+
+    margin-right:10px;
+}
+
+.newsletter input:focus{
+    box-shadow:0 0 10px pink;
+}
+
+/* Modals Login SingUp */
+
+.modal-custom{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.modal-content-custom{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    width:350px;
+    margin:10% auto;
+    text-align:center;
+}
+
+.modal-content-custom input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+
+
+/* Cursor sparkle effect */
+
+.cursor-sparkle{
+    position:fixed;
+    width:6px;
+    height:6px;
+    background:white;
+    border-radius:50%;
+    pointer-events:none;
+    box-shadow:
+    0 0 6px #fff,
+    0 0 12px #ffd6e7,
+    0 0 20px #ffc0cb;
+    animation:sparkleFade 1s linear forwards;
+}
+
+@keyframes sparkleFade{
+    to{
+        transform:translateY(-15px);
+        opacity:0;
+    }
+}
+
+
+
+/* falling petals */
+
+.petal{
+    position:fixed;
+    top:-50px;
+    font-size:18px;
+    pointer-events:none;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-50px) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(100vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+
+
+/* Magic Popup Alert */
+
+.magical-alert-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,240,250,0.6);
+    backdrop-filter:blur(6px);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.magical-alert{
+    max-width:500px;
+    border-radius:20px;
+    border:none;
+    background:linear-gradient(to bottom right,#ffe6fa,#f3d9ff);
+    box-shadow:0 20px 60px rgba(216,138,211,0.4);
+    padding:25px;
+}
+
+
+
+/* Footer */
+
+footer{
+    background:#1a1a1a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+
+
+/* Menu Page Style*/
+
+.menu-hero-section{
+padding:60px 20px;
+text-align:center;
+}
+
+.menu-hero-sub{
+color:#555;
+font-size:18px;
+margin-top:10px;
+}
+
+
+.menu-filter-area{
+margin-top:20px;
+margin-bottom:40px;
+}
+
+.menu-filter-btn.active{
+box-shadow:0 8px 20px rgba(255,140,200,0.5);
+}
+
+
+.menu-cake-grid{
+margin-top:30px;
+}
+
+
+/* cake animation */
+
+.menu-cake-item{
+transition:0.4s ease;
+}
+
+.menu-cake-item.hide{
+opacity:0;
+transform:scale(0.8);
+pointer-events:none;
+position:absolute;
+}
+
+
+/* hover glow */
+
+.menu-cake-item .cake-card{
+transition:0.4s ease;
+}
+
+.menu-cake-item .cake-card:hover{
+transform:translateY(-12px) scale(1.03);
+box-shadow:0 20px 45px rgba(255,150,200,0.4);
+}
+
+
+/* view button */
+
+.menu-view-btn{
+margin-top:10px;
+}
+
+
+/* Popup overlay */
+
+.magical-popup-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:none;
+justify-content:center;
+align-items:center;
+
+background:rgba(25,15,30,0.55);
+backdrop-filter:blur(12px);
+
+z-index:9999;
+animation:overlayFade 0.6s ease;
+}
+
+
+/* popup box */
+
+.magical-popup-box{
+
+background:linear-gradient(
+145deg,
+#fff7fb,
+#ffe9f3,
+#fff0f7
+);
+
+padding:50px 40px;
+border-radius:28px;
+
+max-width:650px;
+width:92%;
+
+text-align:center;
+position:relative;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,0.25),
+0 0 30px rgba(255,180,220,0.3);
+
+border:1px solid rgba(255,255,255,0.6);
+
+animation:popupFloat 0.7s cubic-bezier(.17,.67,.35,1.35);
+}
+
+
+/* cake image */
+
+.popup-cake-img{
+
+width:240px;
+border-radius:22px;
+
+margin-bottom:18px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.2),
+0 0 25px rgba(255,180,220,0.35);
+
+transition:0.4s ease;
+}
+
+.popup-cake-img:hover{
+transform:scale(1.05) rotate(-1deg);
+}
+
+
+/* Title */
+
+.popup-title{
+
+font-family:'Great Vibes',cursive;
+font-size:38px;
+
+color:#c06aa6;
+
+margin-top:5px;
+
+text-shadow:
+0 2px 6px rgba(255,180,220,0.4);
+}
+
+
+/*Price */
+
+.popup-price{
+
+color:#ff4fa3;
+font-size:20px;
+
+margin:12px 0;
+
+font-weight:600;
+letter-spacing:1px;
+}
+
+
+/* Story Text */
+
+.popup-story{
+
+font-size:15px;
+color:#5e5e5e;
+
+margin-top:10px;
+
+line-height:1.7;
+
+padding:0 15px;
+}
+
+
+/* Icon Area */
+
+.popup-icons{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+gap:25px;
+margin-top:28px;
+}
+
+
+/*Heart */
+
+.icon-heart{
+
+font-size:30px;
+cursor:pointer;
+
+transition:all .35s ease;
+
+color:#ff7eb6;
+}
+
+.icon-heart:hover{
+
+transform:scale(1.35);
+filter:drop-shadow(0 0 8px pink);
+}
+
+
+/* Cart Button */
+
+.cart-btn{
+
+background:linear-gradient(
+135deg,
+#ff9ecf,
+#ff7ab6
+);
+
+border:none;
+padding:12px 26px;
+
+border-radius:30px;
+
+color:white;
+font-weight:600;
+
+letter-spacing:0.5px;
+
+box-shadow:
+0 6px 18px rgba(255,120,170,0.4);
+
+transition:all .35s ease;
+}
+
+.cart-btn:hover{
+
+transform:translateY(-3px) scale(1.05);
+
+box-shadow:
+0 12px 30px rgba(255,120,170,0.55);
+}
+
+
+/* Close Button */
+
+.popup-close{
+
+position:absolute;
+top:14px;
+right:18px;
+
+font-size:24px;
+cursor:pointer;
+
+color:#c06aa6;
+
+transition:0.3s ease;
+}
+
+.popup-close:hover{
+
+transform:rotate(90deg) scale(1.2);
+color:#ff5ca8;
+}
+
+
+/* Floating sparkles */
+
+.popup-sparkle{
+
+position:absolute;
+font-size:20px;
+
+opacity:.7;
+
+animation:magicSparkle 3s infinite ease-in-out;
+}
+
+.s1{top:8%; left:18%;}
+.s2{top:18%; right:20%;}
+.s3{bottom:12%; left:28%;}
+
+
+/*animations */
+
+@keyframes overlayFade{
+
+from{
+opacity:0;
+backdrop-filter:blur(0px);
+}
+
+to{
+opacity:1;
+backdrop-filter:blur(12px);
+}
+
+}
+
+
+@keyframes popupFloat{
+
+0%{
+transform:scale(.6) translateY(40px);
+opacity:0;
+}
+
+60%{
+transform:scale(1.05) translateY(-8px);
+}
+
+100%{
+transform:scale(1) translateY(0);
+opacity:1;
+}
+
+}
+
+
+@keyframes magicSparkle{
+
+0%{
+opacity:.2;
+transform:translateY(0) scale(.8);
+}
+
+50%{
+opacity:1;
+transform:translateY(-12px) scale(1.1);
+}
+
+100%{
+opacity:.2;
+transform:translateY(0) scale(.8);
+}
+
+}
+
+/*Oder pages styles */
+
+.order-magical-area{
+padding:80px 20px;
+}
+
+/* Form Panel */
+
+.order-form-panel{
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 20px 50px rgba(255,180,210,0.35);
+
+transition:0.4s;
+}
+
+.order-form-panel:hover{
+transform:translateY(-6px);
+}
+
+/* Inputs */
+
+.order-input{
+
+margin-bottom:18px;
+
+border-radius:12px;
+
+padding:12px;
+
+border:1px solid #ffd0e6;
+}
+
+.order-input:focus{
+
+border-color:#ff7eb6;
+
+box-shadow:0 0 8px rgba(255,140,200,0.4);
+}
+
+/* Button */
+
+.order-submit-btn{
+margin-top:10px;
+}
+
+/* Contact Area */
+
+.order-contact-area{
+padding:30px;
+}
+
+.order-contact-title{
+
+font-family:'Great Vibes';
+
+font-size:42px;
+
+margin-bottom:15px;
+
+color:#444;
+}
+
+.order-contact-text{
+color:#555;
+margin-bottom:20px;
+}
+
+.order-contact-item{
+
+margin-bottom:18px;
+
+font-size:16px;
+
+background:rgba(255,255,255,0.5);
+
+padding:15px;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(255,180,210,0.25);
+}
+
+/* Success Popup */
+
+.order-success-overlay{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+display:none;
+
+justify-content:center;
+align-items:center;
+
+background:rgba(0,0,0,0.55);
+
+backdrop-filter:blur(6px);
+
+z-index:9999;
+}
+
+.order-success-card{
+
+background:linear-gradient(
+135deg,
+#ffe9f5,
+#f8e6ff
+);
+
+padding:45px;
+
+border-radius:25px;
+
+text-align:center;
+
+max-width:500px;
+
+box-shadow:0 20px 60px rgba(255,150,210,0.4);
+
+animation:popupFloat 0.6s ease;
+}
+
+/* sweet message */
+
+.order-sweet-message{
+
+margin-top:100px;
+
+padding:100px 40px;
+
+position:relative;
+
+background:linear-gradient(
+180deg,
+rgba(255,240,250,0.95),
+rgba(255,225,245,0.95),
+rgba(255,240,255,0.95)
+);
+
+box-shadow:
+0 0 40px rgba(255,180,220,0.7),
+0 0 90px rgba(255,210,240,0.6),
+0 0 160px rgba(255,230,255,0.5);
+
+overflow:hidden;
+
+}
+
+
+/* Dreamy glow wave */
+
+.order-sweet-message::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-50%;
+
+width:200%;
+height:100%;
+
+background:linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,0.35),
+transparent
+);
+
+animation:magicSweep 8s infinite linear;
+
+opacity:.7;
+
+}
+
+@keyframes magicSweep{
+
+0%{
+transform:translateX(-60%);
+}
+
+100%{
+transform:translateX(60%);
+}
+
+}
+
+
+
+/* Title */
+
+.sweet-title{
+
+font-family:'Great Vibes';
+
+font-size:60px;
+
+color:#c85fa5;
+
+letter-spacing:3px;
+
+margin-bottom:20px;
+
+text-shadow:
+0 0 12px #ffb6e6,
+0 0 30px #ffd6ff,
+0 0 60px #ffc8f0,
+0 0 100px rgba(255,210,250,0.7);
+
+animation:sweetGlow 4s ease-in-out infinite;
+
+}
+
+
+@keyframes sweetGlow{
+
+0%{
+text-shadow:0 0 10px pink,0 0 25px #ffd9f2;
+}
+
+50%{
+text-shadow:0 0 35px #ffb6e6,0 0 70px #ffd6ff;
+}
+
+100%{
+text-shadow:0 0 10px pink,0 0 25px #ffd9f2;
+}
+
+}
+
+
+
+/* Divider */
+
+.sweet-divider{
+
+width:180px;
+
+height:2px;
+
+margin:25px auto 45px auto;
+
+background:linear-gradient(
+90deg,
+transparent,
+#ffb6e6,
+#ffd6ff,
+#ffb6e6,
+transparent
+);
+
+box-shadow:
+0 0 12px pink,
+0 0 35px #ffd6ff,
+0 0 70px #ffc6f5;
+
+animation:dividerGlow 5s infinite alternate;
+
+}
+
+@keyframes dividerGlow{
+
+from{opacity:.7;}
+
+to{opacity:1;}
+
+}
+
+
+
+/* Text */
+
+.sweet-text{
+
+font-family:'Poppins',sans-serif;
+
+font-size:19px;
+
+line-height:2;
+
+max-width:760px;
+
+margin:auto;
+
+color:#5a4a52;
+
+letter-spacing:0.5px;
+
+text-shadow:
+0 0 6px rgba(255,230,250,0.6),
+0 0 12px rgba(255,210,240,0.4);
+
+}
+
+
+
+/* Floating Glitter */
+
+.sweet-sparkle{
+
+position:absolute;
+
+font-size:22px;
+
+color:#ffd6ff;
+
+animation:sparkleFloat 6s infinite ease-in-out;
+
+opacity:.9;
+
+text-shadow:
+0 0 10px #fff,
+0 0 20px #ffd6ff,
+0 0 40px #ffc0f0,
+0 0 70px rgba(255,210,250,0.7);
+
+}
+
+
+@keyframes sparkleFloat{
+
+0%{
+transform:translateY(0px) scale(1) rotate(0deg);
+opacity:.6;
+}
+
+50%{
+transform:translateY(-25px) scale(1.3) rotate(15deg);
+opacity:1;
+}
+
+100%{
+transform:translateY(0px) scale(1) rotate(0deg);
+opacity:.6;
+}
+
+}
+
+
+
+/* Sparkle Positions */
+
+.s-msg1{
+top:15%;
+left:10%;
+animation-delay:0s;
+}
+
+.s-msg2{
+top:70%;
+right:15%;
+animation-delay:2s;
+}
+
+.s-msg3{
+top:35%;
+right:8%;
+animation-delay:4s;
+}
+
+
+
+/* Magical floating lights */
+
+.order-sweet-message::before{
+
+content:"";
+
+position:absolute;
+
+top:-200px;
+left:-200px;
+
+width:600px;
+height:600px;
+
+background:radial-gradient(
+circle,
+rgba(255,255,255,0.6),
+transparent 70%
+);
+
+animation:magicLight 14s linear infinite;
+
+opacity:.7;
+
+}
+
+@keyframes magicLight{
+
+0%{
+transform:translate(0,0) rotate(0deg);
+}
+
+50%{
+transform:translate(220px,140px) rotate(180deg);
+}
+
+100%{
+transform:translate(0,0) rotate(360deg);
+}
+
+}
+
+
+
+/* fairy dust */
+
+.order-sweet-message span{
+
+position:absolute;
+
+width:4px;
+height:4px;
+
+background:white;
+
+border-radius:50%;
+
+box-shadow:0 0 6px white,0 0 12px #ffd6ff;
+
+animation:fairyDust 6s linear infinite;
+
+opacity:.8;
+
+}
+
+@keyframes fairyDust{
+
+0%{
+transform:translateY(0px);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120px);
+opacity:0;
+}
+
+}
+
+
+
+.order-payment-area{
+
+margin-top:10px;
+margin-bottom:20px;
+
+background:rgba(255,255,255,0.6);
+padding:15px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(255,170,210,0.3);
+}
+
+.payment-title{
+font-weight:600;
+margin-bottom:8px;
+color:#444;
+}
+
+.payment-option{
+display:block;
+font-size:14px;
+margin-bottom:6px;
+cursor:pointer;
+}
+
+/* Mini cart */
+
+.mini-cart-box{
+
+margin-top:30px;
+
+background:linear-gradient(
+135deg,
+rgba(255,240,250,0.9),
+rgba(250,230,255,0.9)
+);
+
+padding:25px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(255,170,210,0.3);
+}
+
+.mini-cart-box h4{
+
+font-family:'Great Vibes';
+font-size:32px;
+color:#c86aa6;
+margin-bottom:10px;
+}
+
+#cartItems{
+list-style:none;
+padding:0;
+}
+
+#cartItems li{
+padding:6px 0;
+color:#555;
+}
+
+.cart-note{
+font-size:13px;
+color:#888;
+margin-top:10px;
+}
+
+
+.cart-item{
+display:grid;
+grid-template-columns:2fr 1fr 1fr 1fr auto;
+gap:8px;
+align-items:center;
+background:rgba(255,255,255,0.6);
+padding:8px;
+margin:6px 0;
+border-radius:10px;
+font-size:14px;
+}
+
+.cart-price{
+color:#c85fa5;
+font-weight:bold;
+}
+
+.cart-subtotal{
+font-weight:bold;
+color:#444;
+}
+
+.remove-btn{
+border:none;
+background:#ff6b81;
+color:white;
+padding:4px 8px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.nav-link.welcome-user{
+background:#ffd6e7 !important;
+color:#333 !important;
+padding:6px 12px;
+border-radius:20px;
+font-weight:500;
+margin-left:10px;
+display:inline-block;
+}
+
+.newsletter-message{
+width:50%;
+padding:12px;
+border-radius:25px;
+border:none;
+margin:10px auto;
+display:block;
+resize:none;
+height:80px;
+font-family:'Poppins',sans-serif;
+}
